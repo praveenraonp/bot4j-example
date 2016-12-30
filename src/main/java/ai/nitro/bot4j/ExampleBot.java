@@ -8,9 +8,9 @@ import ai.nitro.bot4j.middle.domain.Participant;
 import ai.nitro.bot4j.middle.domain.receive.payload.TextReceivePayload;
 import ai.nitro.bot4j.nlp.domain.NlpContext;
 
-public class ExampleBotImpl extends BotImpl {
+public class ExampleBot extends BotImpl {
 
-	protected final static Logger LOG = LogManager.getLogger(ExampleBotImpl.class);
+	protected final static Logger LOG = LogManager.getLogger(ExampleBot.class);
 
 	@Override
 	protected void onReceiveText(final TextReceivePayload receiveTextPayload, final Participant sender)

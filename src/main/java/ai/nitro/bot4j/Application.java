@@ -15,7 +15,7 @@ import ai.nitro.bot4j.integration.slack.receive.webhook.SlackOAuthWebhook;
 public class Application {
 
 	public static void main(final String[] args) {
-		final Injector injector = Guice.createInjector(new NitroBotModule());
+		final Injector injector = Guice.createInjector(new Module());
 
 		final FacebookWebhook facebookWebhook = injector.getInstance(FacebookWebhook.class);
 		final SlackActionWebhook slackActionWebhook = injector.getInstance(SlackActionWebhook.class);

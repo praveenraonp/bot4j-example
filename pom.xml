@@ -7,6 +7,12 @@
 	<packaging>jar</packaging>
 	<version>1.0</version>
 	<name>bot4j-example</name>
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 	<build>
 		<finalName>bot4j-example</finalName>
 		<plugins>
@@ -39,14 +45,21 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>ai.nitro</groupId>
+			<groupId>com.github.nitro-code</groupId>
 			<artifactId>bot4j</artifactId>
-			<version>0.7-SNAPSHOT</version>
+			<version>master-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.sparkjava</groupId>
 			<artifactId>spark-core</artifactId>
 			<version>2.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>
