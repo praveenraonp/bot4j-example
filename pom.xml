@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>com.github.nitro-code</groupId>
 			<artifactId>bot4j</artifactId>
-			<version>master-SNAPSHOT</version>
+			<version>-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.sparkjava</groupId>
