@@ -9,8 +9,8 @@
 	<name>bot4j-example</name>
 	<repositories>
 		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 	<build>
@@ -39,6 +39,14 @@
 							<mainClass>ai.nitro.bot4j.Application</mainClass>
 						</manifest>
 					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.5.0</version>
+				<configuration>
+					<mainClass>ai.nitro.bot4j.Application</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
