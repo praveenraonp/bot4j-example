@@ -25,3 +25,13 @@ $ mvn clean package exec:java
 * Chat
   * In Facebook Messenger send a message to your Facebook page. Facebook should forward the message via the configured webhook to your web server.
   * `ExampleBot` will process the message and answer.
+
+
+License
+-------
+
+Licensed under the BSD 3-Clause License. See LICENSE for details.
+
+### And finally...
+
+Patches accepted, or create an issue!
