@@ -80,7 +80,7 @@ public class ExampleBot extends BotImpl {
 			buttonsSendPayload.addButton(button);
 		}
 
-		sendMessage.addPayload(buttonsSendPayload);
+		sendMessage.setPayload(buttonsSendPayload);
 		messageSender.send(sendMessage);
 	}
 
