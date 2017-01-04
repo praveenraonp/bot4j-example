@@ -19,7 +19,6 @@ import ai.nitro.bot4j.middle.domain.receive.payload.TextReceivePayload;
 import ai.nitro.bot4j.middle.domain.send.SendMessage;
 import ai.nitro.bot4j.middle.domain.send.button.PostbackSendButton;
 import ai.nitro.bot4j.middle.domain.send.payload.ButtonsSendPayload;
-import ai.nitro.bot4j.nlp.domain.NlpContext;
 
 public class ExampleBot extends BotImpl {
 
@@ -48,19 +47,16 @@ public class ExampleBot extends BotImpl {
 	protected void onReceiveText(final TextReceivePayload receiveTextPayload, final Participant sender)
 			throws Exception {
 		final Participant recipient = sender;
-
-		final NlpContext nlpContext = receiveTextPayload.getNlpContext();
-		final String intent = nlpContext.getIntent();
 		final String text = receiveTextPayload.getText();
 
-		LOG.info("received {} with intent {}", text, intent);
+		LOG.info("received {}", text);
 
 		switch (text) {
 		case BUTTON:
 			sendButton(text, recipient);
 			break;
 		default:
-			sendText("received '" + text + "' with intent " + intent, recipient);
+			sendText("received '" + text, recipient);
 			break;
 		}
 	}
