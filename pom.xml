@@ -7,6 +7,9 @@
 	<packaging>jar</packaging>
 	<version>1.0</version>
 	<name>bot4j-example</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<repositories>
 		<repository>
 			<id>jitpack.io</id>
