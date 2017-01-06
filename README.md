@@ -1,7 +1,8 @@
 bot4j example bot
 =================
 
-<a href="https://travis-ci.org/nitro-code/bot4j-example"><img src="https://api.travis-ci.org/nitro-code/bot4j-example.png"></a>
+[![Build](https://api.travis-ci.org/nitro-code/bot4j-example.png)](https://travis-ci.org/nitro-code/bot4j-example)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 This is an example bot for the bot4j framework. It illustrates integration with Facebook and is a starting point for developing own bots based on bot4j.
 
