@@ -15,6 +15,7 @@ import static spark.Spark.post;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
+import ai.nitro.bot4j.integration.alexa.receive.hook.AlexaWebhook;
 import ai.nitro.bot4j.integration.facebook.receive.webhook.FacebookWebhook;
 import ai.nitro.bot4j.integration.slack.receive.webhook.SlackActionWebhook;
 import ai.nitro.bot4j.integration.slack.receive.webhook.SlackEventWebhook;
@@ -29,6 +30,7 @@ public class Application {
 		final SlackActionWebhook slackActionWebhook = injector.getInstance(SlackActionWebhook.class);
 		final SlackEventWebhook slackEventWebhook = injector.getInstance(SlackEventWebhook.class);
 		final SlackOAuthWebhook slackOAuthWebhook = injector.getInstance(SlackOAuthWebhook.class);
+		final AlexaWebhook alexaWebhook = injector.getInstance(AlexaWebhook.class);
 
 		if (System.getenv("PORT") != null) {
 			port(Integer.valueOf(System.getenv("PORT")));
@@ -40,5 +42,9 @@ public class Application {
 		get("/slack/oauth", (req, res) -> slackOAuthWebhook.get(req.raw(), res.raw()));
 		post("/slack/action", (req, res) -> slackActionWebhook.post(req.raw(), res.raw()));
 		post("/slack/event", (req, res) -> slackEventWebhook.post(req.raw(), res.raw()));
+
+		post("/slack/event", (req, res) -> slackEventWebhook.post(req.raw(), res.raw()));
+
+		post("/alexa", (req, res) -> alexaWebhook.post(req.raw(), res.raw()));
 	}
 }
