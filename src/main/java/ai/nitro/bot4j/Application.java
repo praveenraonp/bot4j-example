@@ -15,7 +15,7 @@ import static spark.Spark.post;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-import ai.nitro.bot4j.integration.alexa.receive.hook.AlexaWebhook;
+import ai.nitro.bot4j.integration.alexa.receive.webhook.AlexaWebhook;
 import ai.nitro.bot4j.integration.facebook.receive.webhook.FacebookWebhook;
 import ai.nitro.bot4j.integration.slack.receive.webhook.SlackActionWebhook;
 import ai.nitro.bot4j.integration.slack.receive.webhook.SlackEventWebhook;
