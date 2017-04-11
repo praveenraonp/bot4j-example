@@ -56,7 +56,7 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.github.nitro-code</groupId>
+			<groupId>com.github.nitroai</groupId>
 			<artifactId>bot4j</artifactId>
 			<version>-SNAPSHOT</version>
 		</dependency>
