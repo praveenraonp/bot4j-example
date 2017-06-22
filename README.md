@@ -1,7 +1,7 @@
 bot4j example bot
 =================
 
-[![Build](https://img.shields.io/travis/nitro-code/bot4j-example.svg)](https://travis-ci.org/nitro-code/bot4j-example)
+[![Build](https://img.shields.io/travis/nitroai/bot4j-example.svg)](https://travis-ci.org/nitroai/bot4j-example)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 This is an example bot for the bot4j framework. It illustrates integration with Facebook, Telegram, Slack and Alexa and is a starting point for developing own bots based on bot4j.
